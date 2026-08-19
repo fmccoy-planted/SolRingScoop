@@ -1,0 +1,254 @@
+<!--
+  ============================================================
+  PARODY / PRANK SITE — NOT A REAL PUBLICATION
+  "The Sol Ring Scoop" is fictional. Every article, byline,
+  quote, and advertisement here is invented for a personal
+  joke. Nothing on this site is reporting. Do not redistribute
+  as genuine news.
+  Magic: The Gathering is a trademark of Wizards of the Coast.
+  ============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Sol Ring Scoop — Commander news, ban list reporting, and spoilers</title>
+<meta name="description" content="Untapped news since 2016. Ban list intel, spoiler coverage, and card price movement for Commander players.">
+<meta name="robots" content="noindex, nofollow">
+
+<!-- ==== EDIT ME: replace https://YOUR-SITE-URL-HERE with your real hosted URL ==== -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Sol Ring Scoop">
+<meta property="og:title" content="The Sol Ring Scoop — Commander news and ban list reporting">
+<meta property="og:description" content="Untapped news since 2016. Ban list intel, spoiler coverage, and card price movement.">
+<meta property="og:url" content="https://YOUR-SITE-URL-HERE/">
+<meta property="og:image" content="https://YOUR-SITE-URL-HERE/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#141c2e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23141c2e'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23d9552b' stroke-width='5'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;0,800;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#12161f;--ink-2:#3d4757;--line:#e2e5ea;--paper:#fff;--wash:#f4f6f8;
+    --navy:#141c2e;--flame:#d9552b;--flame-dk:#b03f1c;--mana-g:#3f7d4e;
+    --serif:"Bitter",Georgia,"Times New Roman",serif;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--wash);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  a:hover .hl{text-decoration:underline}
+  :focus-visible{outline:3px solid var(--flame);outline-offset:2px}
+
+  .promo-strip{background:var(--navy);color:#cbd3e2;font-size:11.5px;letter-spacing:.04em;text-align:center;padding:7px 12px;font-weight:500}
+  .promo-strip b{color:#fff}
+  header.site{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:60}
+  .bar{max-width:1120px;margin:0 auto;padding:10px 14px;display:flex;align-items:center;gap:12px}
+  .burger{background:none;border:0;padding:6px;cursor:pointer;display:flex;flex-direction:column;gap:4px}
+  .burger span{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px}
+  .wordmark{display:flex;align-items:baseline;gap:7px;margin-right:auto;min-width:0}
+  .ring{width:26px;height:26px;border-radius:50%;border:4px solid var(--flame);flex:none;position:relative;top:5px}
+  .ring::after{content:"";position:absolute;inset:2px;border-radius:50%;border:1px solid #f0b49a}
+  .wordmark .name{font-family:var(--serif);font-weight:800;font-size:21px;letter-spacing:-.02em;white-space:nowrap}
+  .wordmark .tag{display:none;font-size:10.5px;color:#8b94a3;letter-spacing:.06em;text-transform:uppercase}
+  .search-btn{background:none;border:0;color:var(--ink-2);padding:6px 4px;font-size:17px;cursor:pointer}
+  .sub-btn{background:var(--flame);border:0;color:#fff;padding:8px 13px;border-radius:4px;font-weight:700;font-size:13px;cursor:pointer;font-family:var(--sans)}
+  nav.tabs{border-top:1px solid var(--line);overflow-x:auto;scrollbar-width:none}
+  nav.tabs::-webkit-scrollbar{display:none}
+  nav.tabs ul{display:flex;list-style:none;margin:0 auto;padding:0 8px;max-width:1120px}
+  nav.tabs a{display:block;padding:11px 12px;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);white-space:nowrap}
+  nav.tabs a.on{color:var(--flame-dk);box-shadow:inset 0 -3px 0 var(--flame)}
+
+  .shell{max-width:1120px;margin:0 auto;padding:16px 14px 40px}
+  .adslot{background:var(--paper);border:1px solid var(--line);margin:0 0 18px;padding:9px;border-radius:2px}
+  .adslot .lbl{font-size:9px;letter-spacing:.2em;color:#a7aeba;text-transform:uppercase;margin-bottom:7px;text-align:center}
+  .creative{border-radius:4px;color:#fff;padding:16px;position:relative;overflow:hidden;display:flex;align-items:center;gap:14px;background:#16121a}
+  .pmark{width:46px;height:46px;border-radius:50%;flex:none;background:#f2604c;color:#16121a;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;font-family:var(--serif)}
+  .creative .txt{flex:1;min-width:0}
+  .creative .kicker{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#f2604c;font-weight:700}
+  .creative .head{font-family:var(--serif);font-weight:800;font-size:19px;line-height:1.15;margin:3px 0}
+  .creative .sub{font-size:12.5px;color:#a49aad;line-height:1.45}
+  .creative .cta{background:#f2604c;color:#fff;font-weight:800;font-size:12px;padding:9px 15px;border-radius:3px;flex:none;white-space:nowrap}
+  .creative::after{content:"";position:absolute;right:-46px;top:-46px;width:150px;height:150px;border:14px solid rgba(242,96,76,.08);border-radius:50%}
+
+  .lede{background:var(--paper);border:1px solid var(--line);padding:20px 18px}
+  .flags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+  .flag{font-size:10.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;padding:5px 9px;border-radius:2px}
+  .flag.breaking{background:#c2181d;color:#fff}
+  .flag.excl{background:#fdece6;color:var(--flame-dk);border:1px solid #f6cdbd}
+  .lede h1{font-family:var(--serif);font-weight:800;font-size:29px;line-height:1.14;letter-spacing:-.02em;margin:0 0 12px}
+  .lede p.dek{font-family:var(--serif);font-size:17px;color:var(--ink-2);margin:0 0 14px;line-height:1.5}
+  .meta{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#98a0ad;font-weight:600}
+
+  .strip{display:grid;grid-template-columns:1fr;gap:0;background:var(--paper);border:1px solid var(--line);border-top:0}
+  .item{padding:16px 18px;border-top:1px solid var(--line)}
+  .item .kick{font-size:10.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--flame-dk);margin-bottom:6px}
+  .item h3{font-family:var(--serif);font-size:18px;line-height:1.3;margin:0 0 6px;font-weight:800}
+  .item p{font-size:13.5px;color:var(--ink-2);margin:0 0 8px;line-height:1.45}
+  .item .meta{font-size:11px}
+
+  .sechead{display:flex;justify-content:space-between;align-items:baseline;margin:26px 0 0}
+  .sechead h2{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#98a0ad;margin:0 0 10px;padding-bottom:9px;border-bottom:2px solid var(--flame);display:inline-block}
+
+  footer.site{background:var(--navy);color:#8996ad;padding:28px 18px 34px;font-size:12.5px}
+  footer.site .cols3{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:1120px;margin:0 auto 22px}
+  footer.site h4{color:#fff;font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 10px}
+  footer.site ul{list-style:none;margin:0;padding:0;line-height:2}
+  footer.site a{color:#8996ad}
+  footer.site .fine{max-width:1120px;margin:0 auto;border-top:1px solid #263049;padding-top:16px;font-size:11px;line-height:1.6;color:#65718a}
+
+  @media (min-width:560px){
+    .wordmark .tag{display:block}
+    footer.site .cols3{grid-template-columns:repeat(4,1fr)}
+  }
+  @media (min-width:900px){
+    .lede h1{font-size:38px}
+    .strip{grid-template-columns:repeat(3,1fr)}
+    .item{border-left:1px solid var(--line)}
+    .item:first-child{border-left:0}
+  }
+  @media (max-width:639px){
+    .creative{flex-wrap:wrap;gap:11px}
+    .creative .cta{width:100%;text-align:center}
+  }
+</style>
+</head>
+<body>
+
+<a class="promo-strip" style="display:block;text-decoration:none" href="gotcha/index.html">📦 <b>REALITY FRACTURE</b> sealed product &amp; Commander decks — our affiliate picks &rsaquo;</a>
+
+<header class="site">
+  <div class="bar">
+    <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <div class="wordmark">
+      <div class="ring" aria-hidden="true"></div>
+      <div>
+        <div class="name">The Sol Ring Scoop</div>
+        <div class="tag">Untapped news since 2016</div>
+      </div>
+    </div>
+    <button class="search-btn" aria-label="Search">🔍</button>
+    <button class="sub-btn">Subscribe</button>
+  </div>
+  <nav class="tabs" aria-label="Sections">
+    <ul>
+      <li><a href="gotcha/index.html" class="on">Home</a></li>
+      <li><a href="gotcha/index.html">Commander</a></li>
+      <li><a href="gotcha/index.html">Bans &amp; Rules</a></li>
+      <li><a href="gotcha/index.html">Spoilers</a></li>
+      <li><a href="gotcha/index.html">Finance</a></li>
+      <li><a href="gotcha/index.html">Modern</a></li>
+      <li><a href="gotcha/index.html">Pauper</a></li>
+      <li><a href="gotcha/index.html">Deck Techs</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="shell">
+  <div class="adslot">
+    <div class="lbl">Support independent MTG reporting</div>
+    <a class="creative" href="gotcha/index.html">
+      <div class="pmark">S</div>
+      <div class="txt">
+        <div class="kicker">Scoop Insiders on Patreon</div>
+        <div class="head">Ad-free reading. Leak coverage first.</div>
+        <div class="sub">Members get our ban list reporting before it goes public, the full B&amp;R archive, and the Insiders Discord. From $4/month.</div>
+      </div>
+      <span class="cta">BECOME A MEMBER →</span>
+    </a>
+  </div>
+
+  <a class="lede" style="display:block" href="commander/primeval-titan-unban-leak/index.html">
+    <div class="flags">
+      <span class="flag breaking">Breaking</span>
+      <span class="flag excl">Scoop Exclusive</span>
+    </div>
+    <h1 class="hl">Internal Documents Point to Primeval Titan Coming Off the Commander Ban List</h1>
+    <p class="dek">Two people with knowledge of the process describe a September update that ends the card's fourteen-year absence. A third source disputes that the list is final.</p>
+    <div class="meta">Dana Kowalczyk · 12:31 p.m. ET · 147 comments</div>
+  </a>
+
+  <div class="strip">
+    <a class="item" href="gotcha/index.html">
+      <div class="kick">Finance</div>
+      <h3 class="hl">Vendors quietly pulled foil Titans off the wall Tuesday night</h3>
+      <p>Three storefronts delisted copies within an hour of each other. What that usually means.</p>
+      <div class="meta">Marisol Vega · 2h ago</div>
+    </a>
+    <a class="item" href="gotcha/index.html">
+      <div class="kick">Bans &amp; Rules</div>
+      <h3 class="hl">Every card unbanned in Commander since 2024, and what actually happened next</h3>
+      <p>The panel has moved eleven cards in two years. We tracked what each one did to real tables.</p>
+      <div class="meta">Dana Kowalczyk · Aug 17</div>
+    </a>
+    <a class="item" href="gotcha/index.html">
+      <div class="kick">Opinion</div>
+      <h3 class="hl">Your playgroup's house ban list is worse than the real one</h3>
+      <p>We surveyed 4,100 players. The homebrew lists are less consistent than anyone wants to admit.</p>
+      <div class="meta">Theo Brandt-Nix · Aug 16</div>
+    </a>
+  </div>
+
+  <div class="sechead"><h2>More from Commander</h2></div>
+  <div class="strip" style="border-top:1px solid var(--line)">
+    <a class="item" href="gotcha/index.html">
+      <div class="kick">Deck Tech</div>
+      <h3 class="hl">The green shells that were already waiting for a six-drop like this</h3>
+      <div class="meta">Aug 18</div>
+    </a>
+    <a class="item" href="gotcha/index.html">
+      <div class="kick">Spoilers</div>
+      <h3 class="hl">Reality Fracture's Commander decks leaked a day early. Here's the full list.</h3>
+      <div class="meta">Aug 18</div>
+    </a>
+    <a class="item" href="gotcha/index.html">
+      <div class="kick">Analysis</div>
+      <h3 class="hl">The Commander Format Panel's last four decisions, ranked by how badly they aged</h3>
+      <div class="meta">Aug 14</div>
+    </a>
+  </div>
+</div>
+
+<footer class="site">
+  <div class="cols3">
+    <div><h4>Sections</h4><ul><li><a href="gotcha/index.html">Commander</a></li><li><a href="gotcha/index.html">Bans &amp; Rules</a></li><li><a href="gotcha/index.html">Spoilers</a></li><li><a href="gotcha/index.html">Finance</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="gotcha/index.html">About</a></li><li><a href="gotcha/index.html">Our staff</a></li><li><a href="gotcha/index.html">Ethics policy</a></li><li><a href="gotcha/index.html">Contact</a></li></ul></div>
+    <div><h4>Tips</h4><ul><li><a href="gotcha/index.html">Secure drop</a></li><li><a href="gotcha/index.html">tips@solringscoop.com</a></li><li><a href="gotcha/index.html">Corrections</a></li></ul></div>
+    <div><h4>Legal</h4><ul><li><a href="gotcha/index.html">Terms of use</a></li><li><a href="gotcha/index.html">Privacy</a></li><li><a href="gotcha/index.html">Cookie settings</a></li><li><a href="gotcha/index.html">Do not sell my info</a></li></ul></div>
+  </div>
+  <div class="fine">
+    © 2026 Sol Ring Scoop Media LLC. All rights reserved. The Sol Ring Scoop is unofficial fan content and is not produced by, endorsed by, or affiliated with Wizards of the Coast LLC. Magic: The Gathering and all associated card names are trademarks of Wizards of the Coast LLC. Some links on this site are affiliate links, and we may earn a commission on qualifying purchases.
+  </div>
+</footer>
+
+<script>
+(function(){
+  function go(el, path){ if(el){ el.style.cursor='pointer'; el.addEventListener('click', function(e){ e.preventDefault(); location.href = path; }); } }
+  var map = [
+    ['.burger', 'gotcha/index.html'],
+    ['.search-btn', 'gotcha/index.html'],
+    ['.sub-btn', 'gotcha/index.html'],
+    ['.signup button', 'gotcha/index.html'],
+    ['.loadmore', 'gotcha/index.html'],
+    ['.sticky-ad .go', 'gotcha/index.html'],
+    ['.sticky-ad .art', 'gotcha/index.html'],
+    ['.sticky-ad .cpy', 'gotcha/index.html']
+  ];
+  map.forEach(function(pair){
+    document.querySelectorAll(pair[0]).forEach(function(el){ go(el, pair[1]); });
+  });
+  document.querySelectorAll('.sharebar button').forEach(function(b){
+    go(b, 'gotcha/index.html');
+  });
+  document.querySelectorAll('.signup input').forEach(function(i){
+    i.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ location.href = 'gotcha/index.html'; } });
+  });
+})();
+</script>
+</body>
+</html>
